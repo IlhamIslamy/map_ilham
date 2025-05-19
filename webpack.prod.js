@@ -38,4 +38,10 @@ module.exports = merge(common, {
       swDest: 'sw.bundle.js',
     }),
   ],
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].bundle.js',
+    assetModuleFilename: 'images/[name][ext][query]',
+  },
+  
 });
